@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   DESIGN TOKENS
+   A developer-portfolio identity borrowed from code-editor language:
+   monospace for structural/meta text, a syntax-highlight-inspired accent
+   trio, and a near-black "editor" surface system.
+   ========================================================================== */
+
+@theme {
+  --font-display: "Instrument Sans", ui-sans-serif, sans-serif;
+  --font-body: "Inter", ui-sans-serif, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-accent-teal: #2dd4bf;
+  --color-accent-violet: #a78bfa;
+  --color-accent-amber: #fbbf24;
+
+  --breakpoint-xs: 375px;
+}
+
+:root {
+  color-scheme: dark;
+
+  /* Dark theme (default) */
+  --bg: #0a0b0d;
+  --surface: #131518;
+  --surface-2: #1b1e22;
+  --border: #24272c;
+  --border-strong: #33373d;
+  --text: #edeef0;
+  --text-muted: #8a8f98;
+  --text-faint: #5a5f66;
+
+  --accent: #2dd4bf;
+  --accent-soft: #2dd4bf1a;
+  --accent-2: #a78bfa;
+  --accent-3: #fbbf24;
+
+  --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.45);
+}
+
+:root:not(.dark) {
+  color-scheme: light;
+
+  --bg: #faf9f7;
+  --surface: #ffffff;
+  --surface-2: #f2f1ee;
+  --border: #e6e4e0;
+  --border-strong: #d4d2cd;
+  --text: #16181a;
+  --text-muted: #62666c;
+  --text-faint: #93979d;
+
+  --accent: #0d9488;
+  --accent-soft: #0d94881a;
+  --accent-2: #7c3aed;
+  --accent-3: #b45309;
+
+  --shadow-glass: 0 8px 32px rgba(20, 20, 20, 0.08);
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Respect reduced motion everywhere */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+::selection {
+  background-color: var(--accent-soft);
+  color: var(--accent);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-faint);
+}
+
+/* Visible keyboard focus, always */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Utility layer additions used across the app */
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .font-mono-label {
+    font-family: var(--font-mono);
+    letter-spacing: 0.02em;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+}

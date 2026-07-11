@@ -1,0 +1,23 @@
+// Single source of truth for identity details used across the site.
+// Replace these values with your own.
+import profile from '../assets/profile.jpg'
+import resume from '../assets/file/resume.pdf'
+export const site = {
+  name: "Pavan Pawar",
+  initials: "PP",
+  role: "Full-Stack Software Engineer",
+  location: "Pune, Maharashtra, India",
+  email: "pavanpawar9923100@gmail.com",
+  resumeUrl: resume,
+  avatar: profile,
+  bio: "I build fast, accessible web products end-to-end — from data models to pixel-level interface polish. Currently focused on React, Node.js, and developer tooling.",
+  availability: {
+    open: true,
+    text: "Available for new roles",
+  },
+  social: {
+    github: "https://github.com/PavanPawar12",
+    linkedin: "https://www.linkedin.com/in/pavan-pawar-312631286/",
+    twitter: "https://x.com/yourhandle",
+  },
+};
