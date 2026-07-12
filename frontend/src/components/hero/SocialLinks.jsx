@@ -1,102 +1,3 @@
-// import { motion } from "framer-motion";
-// import { Github, Linkedin, Mail } from "lucide-react";
-// import { site } from "@/data/site";
-
-// const links = [
-//   { icon: Github, href: site.social.github, label: "GitHub" },
-//   { icon: Linkedin, href: site.social.linkedin, label: "LinkedIn" },
-//   { icon: Mail, href: `mailto:${site.email}`, label: "Email" },
-// ];
-
-// const item = {
-//   hidden: { opacity: 0, y: 10 },
-//   visible: { opacity: 1, y: 0 },
-// };
-
-// export function SocialLinks({ className = "" }) {
-//   return (
-//     <div className={`flex items-center gap-3 ${className}`}>
-//       {links.map(({ icon: Icon, href, label }) => (
-//         <motion.a
-//           key={label}
-//           variants={item}
-//           href={href}
-//           target={href.startsWith("http") ? "_blank" : undefined}
-//           rel={href.startsWith("http") ? "noreferrer" : undefined}
-//           aria-label={label}
-//           whileHover={{ y: -3 }}
-//           whileTap={{ scale: 0.94 }}
-//           transition={{ type: "spring", stiffness: 400, damping: 20 }}
-//           className="flex h-10 w-10 items-center justify-center rounded-lg border
-//                      border-[var(--border)] bg-[var(--surface)] text-[var(--text-muted)]
-//                      transition-colors duration-200 hover:border-[var(--border-strong)]
-//                      hover:text-[var(--accent)]"
-//         >
-//           <Icon className="h-4 w-4" />
-//         </motion.a>
-//       ))}
-//     </div>
-//   );
-// }
-
-
-
-// import { motion } from "framer-motion";
-// import { site } from "@/data/site";
-
-// const links = [
-//   {
-//     icon: "https://img.icons8.com/ios-glyphs/30/github.png",
-//     href: site.social.github,
-//     label: "GitHub",
-//   },
-//   {
-//     icon: "https://img.icons8.com/ios-glyphs/30/linkedin.png",
-//     href: site.social.linkedin,
-//     label: "LinkedIn",
-//   },
-//   {
-//     icon: "https://img.icons8.com/ios-filled/50/gmail-new.png",
-//     href: `mailto:${site.email}`,
-//     label: "Email",
-//   },
-// ];
-
-// const item = {
-//   hidden: { opacity: 0, y: 10 },
-//   visible: { opacity: 1, y: 0 },
-// };
-
-// export function SocialLinks({ className = "" }) {
-//   return (
-//     <div className={`flex items-center gap-3 ${className}`}>
-//       {links.map(({ icon, href, label }) => (
-//         <motion.a
-//           key={label}
-//           variants={item}
-//           href={href}
-//           target={href.startsWith("http") ? "_blank" : undefined}
-//           rel={href.startsWith("http") ? "noreferrer" : undefined}
-//           aria-label={label}
-//           whileHover={{ y: -3 }}
-//           whileTap={{ scale: 0.94 }}
-//           transition={{ type: "spring", stiffness: 400, damping: 20 }}
-//           className="flex h-10 w-10 items-center justify-center rounded-lg border
-//                      border-[var(--border)] bg-[var(--surface)]
-//                      transition-colors duration-200 hover:border-[var(--border-strong)]
-//                      hover:bg-[var(--surface-hover)]"
-//         >
-//           <img
-//             src={icon}
-//             alt={label}
-//             className="h-5 w-5 object-contain"
-//           />
-//         </motion.a>
-//       ))}
-//     </div>
-//   );
-// }
-
 import { motion } from "framer-motion";
 import { site } from "@/data/site";
 
@@ -170,7 +71,7 @@ export function SocialLinks({ className = "" }) {
               inset-0
               rounded-xl
               bg-[var(--accent)]
-              opacity-0
+              opacity-9
               blur-xl
               transition-opacity
               duration-300

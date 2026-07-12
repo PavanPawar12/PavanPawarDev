@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
-import { HeroBadge } from "@/components/hero/HeroBadge";
 import { HeroButtons } from "@/components/hero/HeroButtons";
 import { SocialLinks } from "@/components/hero/SocialLinks";
 import { site } from "@/data/site";
@@ -29,7 +28,7 @@ export function HeroContent() {
       animate="visible"
       className="flex w-full max-w-xl flex-col items-start gap-5 text-left"
     >
-      <HeroBadge />
+    
 
       <motion.h1
         variants={item}
