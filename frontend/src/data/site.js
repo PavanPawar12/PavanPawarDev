@@ -19,5 +19,8 @@ export const site = {
     github: "https://github.com/PavanPawar12",
     linkedin: "https://www.linkedin.com/in/pavan-pawar-312631286/",
     twitter: "https://x.com/yourhandle",
+    medium: "https://medium.com/@pavanpawar9923100",
+    instagram: "https://www.instagram.com/pavan_pawar431122/"
+    
   },
 };
