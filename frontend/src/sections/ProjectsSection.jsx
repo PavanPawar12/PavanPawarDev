@@ -41,6 +41,7 @@ export function ProjectsSection() {
           <h2 className="font-display text-3xl font-medium text-[var(--text)] sm:text-4xl">
             Selected work
           </h2>
+          
           <p className="max-w-lg text-sm text-[var(--text-muted)] sm:text-base">
             A mix of full-stack products, frontend tools, and backend systems —
             each one solving a real problem, end to end.
