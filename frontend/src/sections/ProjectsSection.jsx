@@ -51,14 +51,14 @@ export function ProjectsSection() {
           <FeaturedProject project={featured} />
         </div>
 
-        <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        {/* <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <h3 className="font-mono-label text-xs uppercase tracking-wider text-[var(--text-faint)]">
             More builds
           </h3>
           <ProjectFilters active={activeCategory} onChange={setActiveCategory} />
-        </div>
+        </div> */}
 
-        <ProjectGrid projects={filtered} />
+        {/* <ProjectGrid projects={filtered} /> */}
       </div>
     </section>
   );
