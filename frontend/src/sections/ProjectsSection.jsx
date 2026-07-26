@@ -58,6 +58,7 @@ export function ProjectsSection() {
           <ProjectFilters active={activeCategory} onChange={setActiveCategory} />
         </div> */}
 
+
         {/* <ProjectGrid projects={filtered} /> */}
       </div>
     </section>
