@@ -6,7 +6,10 @@
  */
 export const categories = ["All", "Full-Stack", "Frontend", "Backend", "Mobile"];
 import job_portal from '../assets/projectImages/jobportal/portal1.png'
-// import portal from '../assets/projectImages/jobportal/portal2.png'
+
+import portal1 from "../assets/projectImages/jobportal/portal1.png";
+import portal2 from "../assets/projectImages/jobportal/portal2.png";
+import portal3 from "../assets/projectImages/jobportal/portal3.png";
 
 export const projects = [
   {
@@ -21,11 +24,10 @@ export const projects = [
     //heroImage: "/projects/job-portal/cover.jpg",
     heroImage: job_portal,
     gallery: [
-      "/projectImages/jobportal/portal1.png",
-      "/projectImages/jobportal/portal2.png",
-      "/projectImages/jobportal/portal3.png",
-      // "/projects/job-portal/shot-2.jpg",
-      // "/projects/job-portal/shot-3.jpg",
+      portal1,
+      portal2,
+      portal3,
+      
     ],
     technologies: ["React", "Node.js", "PostgreSQL", "Redis", "Docker", "AWS S3"],
     featured: true,
