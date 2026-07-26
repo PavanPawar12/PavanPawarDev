@@ -41,26 +41,27 @@ export function ProjectsSection() {
           <h2 className="font-display text-3xl font-medium text-[var(--text)] sm:text-4xl">
             Selected work
           </h2>
-          
+
           <p className="max-w-lg text-sm text-[var(--text-muted)] sm:text-base">
             A mix of full-stack products, frontend tools, and backend systems —
             each one solving a real problem, end to end.
           </p>
+          
         </motion.div>
 
         <div className="mb-14">
           <FeaturedProject project={featured} />
         </div>
 
-        {/* <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+       <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <h3 className="font-mono-label text-xs uppercase tracking-wider text-[var(--text-faint)]">
             More builds
           </h3>
           <ProjectFilters active={activeCategory} onChange={setActiveCategory} />
-        </div> */}
+        </div> 
 
 
-        {/* <ProjectGrid projects={filtered} /> */}
+        <ProjectGrid projects={filtered} />
       </div>
     </section>
   );
