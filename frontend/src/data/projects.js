@@ -5,7 +5,9 @@
  * Fields marked "detail-only" are only rendered on ProjectDetails.jsx.
  */
 export const categories = ["All", "Full-Stack", "Frontend", "Backend", "Mobile"];
-import job_portal from '../assets/projectImages/job_portal.png'
+import job_portal from '../assets/projectImages/jobportal/portal1.png'
+// import portal from '../assets/projectImages/jobportal/portal2.png'
+
 export const projects = [
   {
     id: "proj-1",
@@ -19,9 +21,11 @@ export const projects = [
     //heroImage: "/projects/job-portal/cover.jpg",
     heroImage: job_portal,
     gallery: [
-      "/projects/job-portal/shot-1.jpg",
-      "/projects/job-portal/shot-2.jpg",
-      "/projects/job-portal/shot-3.jpg",
+      "/projectImages/jobportal/portal1.png",
+      "/projectImages/jobportal/portal2.png",
+      "/projectImages/jobportal/portal3.png",
+      // "/projects/job-portal/shot-2.jpg",
+      // "/projects/job-portal/shot-3.jpg",
     ],
     technologies: ["React", "Node.js", "PostgreSQL", "Redis", "Docker", "AWS S3"],
     featured: true,
