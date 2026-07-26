@@ -25,8 +25,8 @@ export const projects = [
     ],
     technologies: ["React", "Node.js", "PostgreSQL", "Redis", "Docker", "AWS S3"],
     featured: true,
-    github: "https://github.com/yourhandle/job-portal",
-    live: "https://job-portal.example.com",
+    github: "https://github.com/PavanPawar12/TalentForge",
+    live: "https://talentforge-8ag4.onrender.com",
 
     // detail-only
     problemStatement:
