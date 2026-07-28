@@ -32,7 +32,7 @@ export const projects = [
     technologies: ["React", "Node.js", "PostgreSQL", "Redis", "Docker", "AWS S3"],
     featured: true,
     github: "https://github.com/PavanPawar12/TalentForge",
-    live: "https://talentforge-8ag4.onrender.com",
+    live: "https://talentforge.pavanpawar.in",
 
     // detail-only
     problemStatement:

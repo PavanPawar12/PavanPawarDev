@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 export function FeaturedProject({ project }) {
   if (!project) return null;
   const path = `/projects/${project.slug}`;
-
+  
   return (
     <motion.div
       initial={{ opacity: 0, y: 28 }}
