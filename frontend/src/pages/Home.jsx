@@ -3,6 +3,7 @@ import { HeroSection } from "@/sections/HeroSection";
 import { ProjectsSection } from "@/sections/ProjectsSection";
 import { BlogSection } from "@/sections/BlogSection";
 import { site } from "@/data/site";
+import Footer from "@/components/footer/Footer";
 
 /**
  * Placeholder sections. Each will be replaced by its real, fully-built
@@ -52,6 +53,7 @@ export default function Home() {
       <div className="relative mx-auto w-full max-w-7xl">
 
       <BlogSection />
+      <Footer/>
       </div>
     </PageTransition>
   );
