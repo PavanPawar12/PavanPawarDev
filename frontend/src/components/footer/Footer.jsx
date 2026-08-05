@@ -7,6 +7,8 @@ import {
 
 export default function Footer() {
   return (
+    <div className="relative mx-auto w-full max-w-6xl">
+
     <footer className="border-t border-[var(--border)] bg-[var(--background)]">
       <div className="mx-auto max-w-6xl px-6 py-16">
 
@@ -104,5 +106,6 @@ export default function Footer() {
 
       </div>
     </footer>
+    </div>
   );
 }
