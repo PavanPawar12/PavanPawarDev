@@ -6,6 +6,8 @@ import Home from "@/pages/Home";
 import NotFound from "@/pages/NotFound";
 import ComingSoon from "@/pages/ComingSoon";
 import ProjectDetails from "@/pages/ProjectDetails";
+// import Resume from "./components/resume/Resume";
+import Resume from "@/pages/Resume";
 
 /**
  * Scrolls to top on route change, or to a hash target (e.g. "/#projects")
@@ -44,7 +46,7 @@ export default function App() {
           <Route path="/projects/:slug" element={<ProjectDetails />} />
           <Route path="/blog" element={<ComingSoon title="Journal" />} />
           <Route path="/blog/:slug" element={<ComingSoon title="Post" />} />
-          <Route path="/resume" element={<ComingSoon title="Resume" />} />
+          <Route path="/resume" element={<Resume title="Resume" />} />
           <Route path="/contact" element={<ComingSoon title="Contact" />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -1,6 +1,7 @@
 import { PageTransition } from "@/components/ui/PageTransition";
 import { HeroSection } from "@/sections/HeroSection";
 import { ProjectsSection } from "@/sections/ProjectsSection";
+import { BlogSection } from "@/sections/BlogSection";
 import { site } from "@/data/site";
 
 /**
@@ -9,23 +10,23 @@ import { site } from "@/data/site";
  * through the build order. The ids below are what the Navbar, scroll-spy,
  * and command menu already scroll/link to — keep them stable.
  */
-function PlaceholderSection({ id, label }) {
-  return (
-    <section
-      id={id}
-      className="flex min-h-[70vh] scroll-mt-28 flex-col items-start justify-center border-b
-                 border-[var(--border)] px-6 sm:px-10 lg:px-16"
-    >
-      <span className="font-mono-label text-xs text-[var(--text-faint)]">~/{id}</span>
-      <h2 className="mt-3 font-display text-3xl font-medium text-[var(--text)] sm:text-4xl">
-        {label}
-      </h2>
-      <p className="mt-2 max-w-md text-sm text-[var(--text-muted)]">
-        This section hasn't been built yet — it's next up in the queue.
-      </p>
-    </section>
-  );
-}
+// function PlaceholderSection({ id, label }) {
+//   return (
+//     <section
+//       id={id}
+//       className="flex min-h-[70vh] scroll-mt-28 flex-col items-start justify-center border-b
+//                  border-[var(--border)] px-6 sm:px-10 lg:px-16"
+//     >
+//       <span className="font-mono-label text-xs text-[var(--text-faint)]">~/{id}</span>
+//       <h2 className="mt-3 font-display text-3xl font-medium text-[var(--text)] sm:text-4xl">
+//         {label}
+//       </h2>
+//       <p className="mt-2 max-w-md text-sm text-[var(--text-muted)]">
+//         This section hasn't been built yet — it's next up in the queue.
+//       </p>
+//     </section>
+//   );
+// }
 
 export default function Home() {
   return (
@@ -45,8 +46,13 @@ export default function Home() {
 
       <HeroSection />
       <ProjectsSection />
-      <PlaceholderSection id="journey" label="Journey" />
-      <PlaceholderSection id="blog" label="Journal" />
+      
+      {/* <PlaceholderSection id="journey" label="Journey" /> */}
+      {/* <PlaceholderSection id="blog" label="Journal" /> */}
+      <div className="relative mx-auto w-full max-w-7xl">
+
+      <BlogSection />
+      </div>
     </PageTransition>
   );
 }

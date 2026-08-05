@@ -9,6 +9,5 @@
 export const navLinks = [
   { label: "Builds", file: "builds", sectionId: "projects", path: "/projects" },
   { label: "Journal", file: "journal", sectionId: "blog", path: "/blog" },
-  { label: "Journey", file: "journey", sectionId: "journey", path: null },
   { label: "Resume", file: "resume", sectionId: null, path: "/resume" },
 ];
