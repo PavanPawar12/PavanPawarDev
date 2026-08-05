@@ -8,6 +8,7 @@ import ComingSoon from "@/pages/ComingSoon";
 import ProjectDetails from "@/pages/ProjectDetails";
 // import Resume from "./components/resume/Resume";
 import Resume from "@/pages/Resume";
+import { BlogSection } from "@/sections/BlogSection";
 
 /**
  * Scrolls to top on route change, or to a hash target (e.g. "/#projects")
@@ -44,7 +45,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<ComingSoon title="Projects" />} />
           <Route path="/projects/:slug" element={<ProjectDetails />} />
-          <Route path="/blog" element={<ComingSoon title="Journal" />} />
+          <Route path="/blog" element={<BlogSection title="Journal" />} />
           <Route path="/blog/:slug" element={<ComingSoon title="Post" />} />
           <Route path="/resume" element={<Resume title="Resume" />} />
           <Route path="/contact" element={<ComingSoon title="Contact" />} />

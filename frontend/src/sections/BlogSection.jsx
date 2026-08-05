@@ -1,3 +1,4 @@
+import { div } from "framer-motion/client";
 import { ArrowUpRight } from "lucide-react";
 
 const blogs = [
@@ -34,6 +35,8 @@ const blogs = [
 
 export function BlogSection() {
   return (
+    <div className="relative mx-auto w-full max-w-7xl">
+
     <section
       id="blog"
       className="py-28 px-6 sm:px-10 lg:px-16"
@@ -94,5 +97,6 @@ export function BlogSection() {
         ))}
       </div>
     </section>
+    </div>
   );
 }

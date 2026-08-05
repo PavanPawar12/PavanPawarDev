@@ -8,6 +8,7 @@
  */
 export const navLinks = [
   { label: "Builds", file: "builds", sectionId: "projects", path: "/projects" },
-  { label: "Journal", file: "journal", sectionId: "blog", path: "/blog" },
+  // { label: "Journal", file: "journal", sectionId: "blog", path: "/blog" },
+  { label: "Journal", file: "journal", sectionId: null, path: "/blog" },
   { label: "Resume", file: "resume", sectionId: null, path: "/resume" },
 ];
