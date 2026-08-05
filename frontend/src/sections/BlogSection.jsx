@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/Footer";
 import { div } from "framer-motion/client";
 import { ArrowUpRight } from "lucide-react";
 
@@ -97,6 +98,8 @@ export function BlogSection() {
         ))}
       </div>
     </section>
+    <Footer/>
+    
     </div>
   );
 }

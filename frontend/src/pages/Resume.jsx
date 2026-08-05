@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/Footer";
 import { PageTransition } from "@/components/ui/PageTransition";
 import { Download } from "lucide-react";
 
@@ -33,6 +34,7 @@ export default function Resume() {
           </div>
 
         </div>
+        <Footer/>
       </section>
     </PageTransition>
   );
