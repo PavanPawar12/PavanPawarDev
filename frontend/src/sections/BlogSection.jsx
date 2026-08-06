@@ -14,13 +14,13 @@ const blogs = [
   },
 
   {
-    title: "DSA Roadmap for Java Developers",
+    title: "How Beginners Can Start Web Development in 2026",
     description:
-      "Complete roadmap to master Data Structures and Algorithms using Java for placements and interviews.",
-    date: "Coming Soon",
-    readTime: "8 min read",
-    tags: ["Java", "DSA"],
-    link: "#",
+      "Learning web development doesn’t have to be confusing. Focus on one step at a time, build projects consistently, and you’ll gradually become a confident full-stack developer.",
+    date: "August 2026",
+    readTime: "5 min read",
+    tags: ["Web Development"],
+    link: "https://medium.com/@pavanpawar9923100/how-beginners-can-start-web-development-in-2026-a-simple-roadmap-272f3d8aa401?postPublishedType=initial",
   },
 
   {
