@@ -297,7 +297,7 @@ export default function ProjectDetails() {
       {/* Related projects */}
       {related.length > 0 && (
         <section className="border-t border-[var(--border)] px-6 py-16 sm:px-10 lg:px-16">
-          <div className="mx-auto max-w-6xl">
+          <div className="mx-auto max-w-5xl">
             <div className="mb-8 flex flex-col gap-2">
               <span className="font-mono-label text-xs text-[var(--text-faint)]">
                 ~/related

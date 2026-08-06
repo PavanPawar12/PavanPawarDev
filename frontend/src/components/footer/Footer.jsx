@@ -7,19 +7,17 @@ import {
 
 export default function Footer() {
   return (
-    <div className="relative mx-auto w-full max-w-6xl">
+    <div className="relative mx-auto w-full max-w-5xl">
 
     <footer className="border-t border-[var(--border)] bg-[var(--background)]">
-      <div className="mx-auto max-w-6xl px-6 py-16">
+      <div className="mx-auto max-w-5xl px-6 py-16">
 
         <div className="grid gap-10 md:grid-cols-2">
 
           {/* Left */}
 
           <div>
-            <p className="font-mono-label text-xs text-[var(--text-faint)]">
-              ~/footer
-            </p>
+           
 
             <h2 className="mt-3 font-display text-4xl text-[var(--text)]">
               Thanks for stopping by.

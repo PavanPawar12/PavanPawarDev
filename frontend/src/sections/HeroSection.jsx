@@ -23,7 +23,7 @@ export function HeroSection() {
         }}
       />
 
-      <div className="relative mx-auto w-full max-w-6xl">
+      <div className="relative mx-auto w-full max-w-5xl">
         <Hero />
       </div>
     </section>

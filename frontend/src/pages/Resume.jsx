@@ -8,7 +8,7 @@ export default function Resume() {
       <title>Pavan Pawar | Resume</title>
 
       <section className="min-h-screen px-6 py-20">
-        <div className="mx-auto max-w-6xl">
+        <div className="mx-auto max-w-5xl">
 
           <div className="mb-8 flex items-center justify-between">
             <h1 className="text-4xl font-bold">

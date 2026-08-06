@@ -51,7 +51,7 @@ export function HeroImage() {
             src={site.avatar}
             alt={site.name}
             onError={() => setImgError(true)}
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover object-[center_20%]"
           />
         ) : (
           <div className="flex h-full w-full items-center justify-center">

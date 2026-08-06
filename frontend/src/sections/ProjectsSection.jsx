@@ -27,7 +27,7 @@ export function ProjectsSection() {
       id="projects"
       className="scroll-mt-24 border-b border-[var(--border)] px-6 py-24 sm:px-10 lg:px-16"
     >
-      <div className="mx-auto w-full max-w-6xl">
+      <div className="mx-auto w-full max-w-5xl">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}

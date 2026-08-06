@@ -36,7 +36,7 @@ const blogs = [
 
 export function BlogSection() {
   return (
-    <div className="relative mx-auto w-full max-w-7xl">
+    <div className="relative mx-auto w-full max-w-6xl">
 
     <section
       id="blog"
