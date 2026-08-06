@@ -42,7 +42,6 @@
 //   );
 // }
 
-
 import { motion } from "framer-motion";
 import { ArrowRight, Download, PlayCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -93,17 +92,14 @@ export function HeroButtons() {
 
       {/* Intro Video */}
       <button
-  onClick={() => setOpenVideo(true)}
-  className="flex items-center gap-2 text-sm font-medium text-[var(--accent)] hover:underline"
->
-  <PlayCircle className="h-5 w-5" />
-  Watch My Introduction (60 sec)
-</button>
+        onClick={() => setOpenVideo(true)}
+        className="flex items-center gap-2 text-sm font-medium text-[var(--accent)] hover:underline"
+      >
+        <PlayCircle className="h-5 w-5" />
+        Watch My Introduction (60 sec)
+      </button>
 
-<IntroVideoModal
-  open={openVideo}
-  onClose={() => setOpenVideo(false)}
-/>
+      <IntroVideoModal open={openVideo} onClose={() => setOpenVideo(false)} />
     </motion.div>
   );
 }

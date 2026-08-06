@@ -83,20 +83,20 @@ export function SocialLinks({ className = "" }) {
           <img
             src={icon}
             alt={label}
-            className="
-              relative
-              z-10
-              h-5
-              w-5
-              object-contain
+            // className="
+            //   relative
+            //   z-10
+            //   h-5
+            //   w-5
+            //   object-contain
 
-              transition-all
-              duration-300
+            //   transition-all
+            //   duration-300
 
-              group-hover:scale-110
-              group-hover:brightness-0
-              group-hover:invert
-            "
+            //   group-hover:scale-110
+            //   group-hover:brightness-0
+            //   group-hover:invert
+            // "
           />
         </motion.a>
       ))}
