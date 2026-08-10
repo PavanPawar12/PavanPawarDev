@@ -32,7 +32,6 @@ export default function Resume() {
               className="h-[900px] w-full"
             />
           </div>
-
         </div>
         <Footer/>
       </section>
