@@ -15,7 +15,7 @@ const card = {
 export function ProjectCard({ project }) {
   const navigate = useNavigate();
   const path = `/projects/${project.slug}`;
-
+  
   const openExternal = (e, url) => {
     e.preventDefault();
     e.stopPropagation();

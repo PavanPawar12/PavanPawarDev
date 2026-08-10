@@ -153,12 +153,12 @@ export default function ProjectDetails() {
 
         {/* Architecture (placeholder, per brief) */}
         <motion.div {...reveal()} className="border-t border-[var(--border)] py-10">
-          <div className="mb-4 flex items-center gap-2">
+          {/* <div className="mb-4 flex items-center gap-2">
             <LayoutTemplate className="h-4 w-4 text-[var(--accent)]" />
             <span className="font-mono-label text-xs uppercase tracking-wider text-[var(--text-faint)]">
               ~/architecture
             </span>
-          </div>
+          </div> */}
           <h2 className="mb-4 font-display text-2xl font-medium text-[var(--text)]">
             System architecture
           </h2>
@@ -170,20 +170,20 @@ export default function ProjectDetails() {
         </motion.div>
 
         {/* Features */}
-        <DetailBlock icon={CheckCircle2} eyebrow="~/features" title="Key features">
+        {/* <DetailBlock icon={CheckCircle2} eyebrow="~/features" title="Key features">
           <ListBlock items={project.features} />
-        </DetailBlock>
+        </DetailBlock> */}
 
         {/* Challenges & Solutions */}
         <motion.div {...reveal()} className="border-t border-[var(--border)] py-10">
           <div className="grid gap-10 sm:grid-cols-2">
             <div>
-              <div className="mb-4 flex items-center gap-2">
+              {/* <div className="mb-4 flex items-center gap-2">
                 <AlertTriangle className="h-4 w-4 text-[var(--accent-3)]" />
                 <span className="font-mono-label text-xs uppercase tracking-wider text-[var(--text-faint)]">
                   ~/challenges
                 </span>
-              </div>
+              </div> */}
               <ul className="space-y-3 text-[15px] leading-relaxed text-[var(--text-muted)]">
                 {project.challenges.map((c) => (
                   <li key={c} className="border-l-2 border-[var(--border-strong)] pl-3">
@@ -231,13 +231,13 @@ export default function ProjectDetails() {
         )}
 
         {/* Folder structure */}
-        <DetailBlock icon={LayoutTemplate} eyebrow="~/structure" title="Folder structure">
+        {/* <DetailBlock icon={LayoutTemplate} eyebrow="~/structure" title="Folder structure">
           <pre className="overflow-x-auto rounded-xl border border-[var(--border)] bg-[var(--surface-2)] p-4 font-mono-label text-xs leading-relaxed text-[var(--text-muted)]">
             {project.folderStructure}
           </pre>
-        </DetailBlock>
+        </DetailBlock> */}
 
-        {/* Code highlights */}
+        {/* Code highlights
         {project.codeHighlights?.length > 0 && (
           <DetailBlock icon={Wrench} eyebrow="~/code" title="Code highlights">
             <div className="space-y-6">
@@ -253,37 +253,37 @@ export default function ProjectDetails() {
               ))}
             </div>
           </DetailBlock>
-        )}
+        )} */}
 
         {/* Performance */}
-        <DetailBlock icon={Gauge} eyebrow="~/performance" title="Performance optimizations">
+        {/* <DetailBlock icon={Gauge} eyebrow="~/performance" title="Performance optimizations">
           <ListBlock items={project.performance} />
-        </DetailBlock>
+        </DetailBlock> */}
 
         {/* Security */}
-        <DetailBlock icon={ShieldCheck} eyebrow="~/security" title="Security features">
+        {/* <DetailBlock icon={ShieldCheck} eyebrow="~/security" title="Security features">
           <ListBlock items={project.security} />
-        </DetailBlock>
+        </DetailBlock> */}
 
         {/* Auth flow */}
-        <DetailBlock icon={KeyRound} eyebrow="~/auth" title="Authentication flow">
+        {/* <DetailBlock icon={KeyRound} eyebrow="~/auth" title="Authentication flow">
           <p>{project.authFlow}</p>
-        </DetailBlock>
+        </DetailBlock> */}
 
         {/* Responsive design */}
-        <DetailBlock icon={Smartphone} eyebrow="~/responsive" title="Responsive design">
+        {/* <DetailBlock icon={Smartphone} eyebrow="~/responsive" title="Responsive design">
           <p>{project.responsiveDetails}</p>
-        </DetailBlock>
+        </DetailBlock> */}
 
         {/* Lessons */}
-        <DetailBlock icon={Lightbulb} eyebrow="~/lessons" title="Lessons learned">
+        {/* <DetailBlock icon={Lightbulb} eyebrow="~/lessons" title="Lessons learned">
           <ListBlock items={project.lessons} />
-        </DetailBlock>
+        </DetailBlock> */}
 
         {/* Future scope */}
-        <DetailBlock icon={Rocket} eyebrow="~/next" title="Future improvements">
+        {/* <DetailBlock icon={Rocket} eyebrow="~/next" title="Future improvements">
           <ListBlock items={project.futureScope} />
-        </DetailBlock>
+        </DetailBlock> */}
 
         <div className="flex flex-wrap items-center gap-3 border-t border-[var(--border)] py-10">
           <Button asChild variant="outline">

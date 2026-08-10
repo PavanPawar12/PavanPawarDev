@@ -9,6 +9,7 @@ import ProjectDetails from "@/pages/ProjectDetails";
 // import Resume from "./components/resume/Resume";
 import Resume from "@/pages/Resume";
 import { BlogSection } from "@/sections/BlogSection";
+// import  {ProjectCard}  from "@/components/projects/ProjectCard";
 
 /**
  * Scrolls to top on route change, or to a hash target (e.g. "/#projects")
@@ -44,6 +45,7 @@ export default function App() {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<ComingSoon title="Projects" />} />
+          {/* <Route path="/projects" element={<ProjectCard title="Projects" />} /> */}
           <Route path="/projects/:slug" element={<ProjectDetails />} />
           <Route path="/blog" element={<BlogSection title="Journal" />} />
           <Route path="/blog/:slug" element={<ComingSoon title="Post" />} />
