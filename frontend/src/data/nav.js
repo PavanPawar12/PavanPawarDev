@@ -11,4 +11,5 @@ export const navLinks = [
   // { label: "Journal", file: "journal", sectionId: "blog", path: "/blog" },
   { label: "Journal", file: "journal", sectionId: null, path: "/blog" },
   { label: "Resume", file: "resume", sectionId: null, path: "/resume" },
+  { label: "Projects", file: "projects", sectionId: null, path: "/projects" },
 ];
