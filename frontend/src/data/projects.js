@@ -11,6 +11,7 @@ import portal1 from "../assets/projectImages/jobportal/portal1.png";
 import portal2 from "../assets/projectImages/jobportal/portal2.png";
 import portal3 from "../assets/projectImages/jobportal/portal3.png";
 import steelpage from "../assets/projectImages/stell/steelpage.png"
+import portfolio from "../assets/projectImages/portfolio/homeport.png"
 
 export const projects = [
   {
@@ -98,7 +99,7 @@ export const projects = [
       "Add interview scheduling with calendar sync",
       "Support team-based recruiter workspaces with shared candidate pools",
     ],
- },
+  },
   {
     id: "proj-2",
     slug: "future-farming",
@@ -287,6 +288,118 @@ export const projects = [
     "Add reviews and ratings for local businesses",
     "Support multiple villages across Beed district",
     "Add Marathi and English language switching",
+  ],
+  },
+  {
+  id: "proj-3",
+  slug: "personal-portfolio",
+  title: "Personal Portfolio",
+  subtitle: "A modern developer portfolio showcasing projects, skills, and experience",
+  description:
+    "A responsive personal portfolio designed to showcase my development projects, technical skills, experience, and achievements with a clean and interactive user experience.",
+
+  category: "Frontend",
+  accent: "var(--accent)",
+
+  heroImage: portfolio,
+  gallery: [
+    // portfolio1,
+    // portfolio2,
+    // portfolio3,
+  ],
+
+  technologies: [
+    "React",
+    "Vite",
+    "Tailwind CSS",
+    "JavaScript",
+    "Framer Motion",
+    "Vercel",
+  ],
+
+  featured: true,
+
+  github: "https://github.com/PavanPawar12/PavanPawarDev",
+  live: "https://pavanpawar.in",
+
+  // detail-only
+  problemStatement:
+    "A developer portfolio needs to communicate technical skills and project experience quickly while remaining visually engaging, responsive, and easy to navigate across different devices.",
+
+  whyBuilt:
+    "I built this portfolio to create a professional online presence where recruiters and companies can quickly understand my technical skills, projects, experience, and development journey.",
+
+  features: [
+    "Responsive design for desktop, tablet, and mobile",
+    "Interactive project showcase with detailed project pages",
+    "Dedicated sections for skills, experience, education, and projects",
+    "Smooth animations and page transitions",
+    "Project filtering based on technology and category",
+    "Contact section for recruiter and professional inquiries",
+    "SEO-friendly structure and optimized page loading",
+  ],
+
+  challenges: [
+    "Creating a visually impressive interface without sacrificing usability",
+    "Making complex project information easy to explore",
+    "Maintaining consistent responsiveness across different screen sizes",
+    "Optimizing animations and assets for faster page loading",
+  ],
+
+  solutions: [
+    "Created reusable React components for sections and project cards",
+    "Implemented responsive layouts using Tailwind CSS",
+    "Used lazy loading and optimized assets to improve performance",
+    "Separated project data from UI components to make the portfolio easier to maintain",
+    "Added reusable animations and transitions for consistent interactions",
+  ],
+
+
+  codeHighlights: [
+    {
+      title: "Reusable project data structure",
+      code: `const project = {
+  title: "Personal Portfolio",
+  category: "Frontend",
+  technologies: [
+    "React",
+    "Vite",
+    "Tailwind CSS"
+  ],
+  live: "https://pavanpawar.in"
+};`,
+    },
+  ],
+
+  performance: [
+    "Used optimized assets and lazy loading to reduce unnecessary page loads",
+    "Built reusable components to reduce duplicated UI code",
+    "Designed responsive layouts that adapt across desktop, tablet, and mobile devices",
+  ],
+
+  security: [
+    "External links use safe target and rel attributes",
+    "Sensitive credentials and API keys are kept outside the frontend source code",
+    "Form inputs are validated before submission",
+  ],
+
+  authFlow:
+    "The portfolio is primarily a public-facing application and does not require user authentication. Contact functionality can use a secure backend or third-party email service without exposing private credentials.",
+
+  responsiveDetails:
+    "The layout adapts from multi-column desktop sections to stacked mobile layouts. Navigation, project cards, typography, images, and interactive elements are optimized for smaller screens.",
+
+  lessons: [
+    "Good component architecture makes a portfolio much easier to maintain as the number of projects grows",
+    "Performance and responsiveness are just as important as visual design",
+    "A portfolio should communicate technical ability through the implementation itself rather than only listing technologies",
+  ],
+
+  futureScope: [
+    "Add an AI-powered portfolio assistant for recruiters",
+    "Add a downloadable resume generation feature",
+    "Add analytics to understand which projects recruiters interact with most",
+    "Add a blog section for technical articles and learning notes",
   ],
 },
 ];

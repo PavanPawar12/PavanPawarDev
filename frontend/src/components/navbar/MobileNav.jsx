@@ -76,7 +76,7 @@ export function MobileNav() {
             initial="hidden"
             animate="visible"
             exit="exit"
-            className="fixed inset-0 z-[60] flex flex-col bg-[var(--bg)]"
+            className="fixed inset-0 z-[60] flex flex-col bg-black"
           >
             <div className="flex items-center justify-between px-6 py-5">
               <span className="font-mono-label text-[13px] text-[var(--text-faint)]">

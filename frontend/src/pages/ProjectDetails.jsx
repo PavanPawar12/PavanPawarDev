@@ -159,14 +159,14 @@ export default function ProjectDetails() {
               ~/architecture
             </span>
           </div> */}
-          <h2 className="mb-4 font-display text-2xl font-medium text-[var(--text)]">
+          {/* <h2 className="mb-4 font-display text-2xl font-medium text-[var(--text)]">
             System architecture
           </h2>
           <div className="flex aspect-[21/9] w-full max-w-3xl items-center justify-center rounded-xl border border-dashed border-[var(--border-strong)] bg-[var(--surface-2)]">
             <span className="font-mono-label text-xs text-[var(--text-faint)]">
               Architecture diagram — coming soon
             </span>
-          </div>
+          </div> */}
         </motion.div>
 
         {/* Features */}
