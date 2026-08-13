@@ -7,7 +7,7 @@ export default function Resume() {
     <PageTransition>
       <title>Pavan Pawar | Resume</title>
 
-      <section className="min-h-screen px-6 py-20">
+      <section className="min-h-screen px-6 py-20 pt-25">
         <div className="mx-auto max-w-5xl">
 
           <div className="mb-8 flex items-center justify-between">
