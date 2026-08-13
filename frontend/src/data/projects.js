@@ -10,6 +10,7 @@ import job_portal from '../assets/projectImages/jobportal/portal1.png'
 import portal1 from "../assets/projectImages/jobportal/portal1.png";
 import portal2 from "../assets/projectImages/jobportal/portal2.png";
 import portal3 from "../assets/projectImages/jobportal/portal3.png";
+import steelpage from "../assets/projectImages/stell/steelpage.png"
 
 export const projects = [
   {
@@ -163,6 +164,131 @@ export const projects = [
     ],
     futureScope: ["Add automated irrigation valve control, not just alerting"],
   },
+  {
+  id: "proj-3",
+  slug: "gasani-local-business",
+  title: "Gasani Local Business",
+  subtitle: "A Marathi-first digital platform for local businesses in Gasani, Beed",
+  description:
+    "A frontend-focused platform built to help small local businesses in Gasani village, Beed, Maharashtra, create an online presence and make their services easier to discover. The application uses Marathi as the primary language to make the platform simple and accessible for local users.",
+
+  category: "Frontend",
+  accent: "var(--accent)",
+  heroImage: steelpage,
+
+  gallery: [
+    // gasani1,
+    // gasani2,
+    // gasani3,
+  ],
+
+  technologies: [
+    "React",
+    "JavaScript",
+    "CSS",
+    "React Router",
+  ],
+
+  featured: true,
+
+  github: "https://github.com/PavanPawar12/adhunik-steel-ghasani",
+  live: "https://adhunik-steel-ghasani.vercel.app",
+
+  // detail-only
+  problemStatement:
+    "Many small businesses in villages rely mainly on word-of-mouth and local customers. They often do not have a simple digital platform where people can discover their business, understand the services they provide, and contact them easily.",
+
+  whyBuilt:
+    "I built this project to explore how technology can be used to support small local businesses and make digital information more accessible to people in my own region. I also wanted to build the interface in Marathi so that local users could interact with the platform comfortably.",
+
+  features: [
+    "Marathi-first user interface designed for local users",
+    "Simple authentication flow for users and business owners",
+    "Business listing and service information",
+    "Business-focused homepage for discovering local services",
+    "Responsive design for mobile and desktop users",
+    "Simple navigation designed for users with limited technical experience",
+  ],
+
+  challenges: [
+    "Designing a simple interface that could be easily understood by local users",
+    "Building the application primarily in Marathi while maintaining a clean user experience",
+    "Creating a responsive layout that works well on mobile devices",
+    "Keeping the application simple enough for small business owners to manage",
+  ],
+
+  solutions: [
+    "Used a clean and minimal React interface with simple navigation and clearly visible actions",
+    "Used Marathi throughout the main user-facing interface to improve accessibility for local users",
+    "Designed mobile-first layouts because many users are expected to access the platform through smartphones",
+    "Separated authentication and business-related components to keep the application maintainable",
+  ],
+
+  folderStructure: `src/
+├── assets/
+├── components/
+├── pages/
+│   ├── Home/
+│   ├── Login/
+│   ├── Register/
+│   └── Business/
+├── hooks/
+├── routes/
+├── services/
+└── App.jsx`,
+
+  codeHighlights: [
+    {
+      title: "React Authentication Flow",
+      code: `const handleLogin = async (formData) => {
+  try {
+    const response = await loginUser(formData);
+
+    if (response.success) {
+      navigate("/home");
+    }
+  } catch (error) {
+    console.error("Login failed:", error);
+  }
+};`,
+    },
+  ],
+
+  performance: [
+    "Used reusable React components to reduce duplicated UI code",
+    "Optimized images and assets to improve page loading performance",
+    "Designed responsive layouts for mobile-first usage",
+  ],
+
+  security: [
+    "Implemented protected routes for authenticated users",
+    "Validated authentication-related form inputs",
+    "Kept authentication logic separated from presentation components",
+  ],
+
+  authFlow:
+    "Users can create an account and log in through a simple authentication flow. Protected routes prevent unauthenticated users from accessing restricted sections of the application.",
+
+  responsiveDetails:
+    "The interface is designed primarily for mobile users and adapts to larger screens using responsive layouts. Business information and navigation remain easy to access across different screen sizes.",
+
+  lessons: [
+    "A simple interface can be more effective than a feature-heavy design when building for local users",
+    "Using the user's native language can make a digital product much more approachable",
+    "Building for a specific local community helped me think more carefully about accessibility and usability",
+    "React component-based architecture makes it easier to scale a project as more businesses and features are added",
+  ],
+
+  futureScope: [
+    "Add Google Maps integration for business locations",
+    "Allow business owners to create and manage their own business profiles",
+    "Add business search and category-based filtering",
+    "Add WhatsApp and direct calling integration",
+    "Add reviews and ratings for local businesses",
+    "Support multiple villages across Beed district",
+    "Add Marathi and English language switching",
+  ],
+},
 ];
 
 export function getProjectBySlug(slug) {

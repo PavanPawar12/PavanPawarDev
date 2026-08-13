@@ -9,6 +9,7 @@ import ProjectDetails from "@/pages/ProjectDetails";
 // import Resume from "./components/resume/Resume";
 import Resume from "@/pages/Resume";
 import { BlogSection } from "@/sections/BlogSection";
+import { ProjectsSection } from "@/sections/ProjectsSection";
 // import  {ProjectCard}  from "@/components/projects/ProjectCard";
 
 /**
@@ -44,7 +45,7 @@ export default function App() {
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<ComingSoon title="Projects" />} />
+          <Route path="/projects" element={<ProjectsSection title="Projects" />} />
           {/* <Route path="/projects" element={<ProjectCard title="Projects" />} /> */}
           <Route path="/projects/:slug" element={<ProjectDetails />} />
           <Route path="/blog" element={<BlogSection title="Journal" />} />

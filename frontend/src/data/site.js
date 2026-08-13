@@ -3,7 +3,6 @@
 import profile from '../assets/profile.jpg'
 // import PavanPawar_CV from '../assets/file/PavanPawar_CV.pdf'
 import PavanPawar_CV from '../../../frontend/public/PavanPawar_CV.pdf'
-
 export const site = {
   name: "Pavan Pawar",
   initials: "PP",
