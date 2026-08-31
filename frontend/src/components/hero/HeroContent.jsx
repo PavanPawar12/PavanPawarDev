@@ -60,7 +60,7 @@ export function HeroContent() {
         {site.location}
       </motion.div>
 
-      <HeroButtons />
+      <HeroButtons /> 
 
       <motion.div variants={item}>
         <SocialLinks className="mt-1" />

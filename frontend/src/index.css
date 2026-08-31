@@ -130,3 +130,18 @@ body {
     text-wrap: balance;
   }
 }
+
+
+.social-icon {
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* Dark mode → black icon becomes white */
+.dark .social-icon {
+  filter: invert(1);
+}
+
+/* Light mode → keep icon black */
+:root:not(.dark) .social-icon {
+  filter: none;
+}
