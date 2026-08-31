@@ -96,10 +96,6 @@ export default function Footer() {
 
         <div className="mt-16 flex flex-col items-center justify-between gap-3 border-t border-[var(--border)] pt-8 text-sm text-[var(--text-faint)] md:flex-row">
           <p>© 2026 Pavan Pawar. All rights reserved.</p>
-
-          <p>
-            Designed & Developed with ❤️ using React + Tailwind CSS
-          </p>
         </div>
 
       </div>

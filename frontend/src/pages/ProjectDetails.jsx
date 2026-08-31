@@ -20,6 +20,7 @@ import { ProjectMedia } from "@/components/projects/ProjectMedia";
 import { ProjectCard } from "@/components/projects/ProjectCard";
 import { Button } from "@/components/ui/button";
 import { getProjectBySlug, getRelatedProjects } from "@/data/projects";
+import Footer from "@/components/footer/Footer";
 
 function reveal(delay = 0) {
   return {
@@ -312,6 +313,7 @@ export default function ProjectDetails() {
               ))}
             </div>
           </div>
+          <Footer/>
         </section>
       )}
     </PageTransition>
