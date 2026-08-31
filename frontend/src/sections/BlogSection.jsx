@@ -1,3 +1,4 @@
+
 import Footer from "@/components/footer/Footer";
 import { div } from "framer-motion/client";
 import { ArrowUpRight } from "lucide-react";
@@ -83,7 +84,7 @@ export function BlogSection() {
               {blog.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="rounded-full bg-gray-800 px-3 py-1 text-sm"
+                  className="rounded-full bg-gray-100 px-3 py-1 text-sm text-gray-700 dark:bg-gray-800 dark:text-gray-200"
                 >
                   {tag}
                 </span>
@@ -98,6 +99,7 @@ export function BlogSection() {
         ))}
       </div>
     </section>
+
     <Footer/>
     
     </div>

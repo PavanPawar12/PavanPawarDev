@@ -82,49 +82,50 @@ export function HeroButtons() {
 
   {/* Get In Touch */}
   <Button
-    size="lg"
-    variant="outline"
-    onClick={() =>
-      document.getElementById("contact")?.scrollIntoView({
-        behavior: "smooth",
-      })
-    }
-    className="
-      group
-      h-12
-      w-full
-      rounded-xl
-      border
-      border-[var(--border)]
-      bg-[var(--surface)]
-      px-6
-      text-[var(--foreground)]
-      shadow-sm
-      transition-all
-      duration-300
-      hover:-translate-y-1
-      hover:bg-[var(--surface)]
-      hover:shadow-[0_8px_25px_rgba(0,0,0,0.08)]
-      dark:hover:shadow-[0_8px_25px_rgba(255,255,255,0.08)]
-    "
-  >
-    <span className="flex items-center gap-2.5">
-      <Send
-        className="
-          h-5
-          w-5
-          transition-transform
-          duration-300
-          group-hover:-translate-y-0.5
-          group-hover:translate-x-0.5
-        "
-      />
+  size="lg"
+  variant="outline"
+  onClick={() =>
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: "smooth",
+    })
+  }
+  className="
+    group
+    h-12
+    w-full
+    rounded-xl
+    border
+    border-[var(--border)]
+    bg-[var(--surface)]
+    px-6
+    text-[var(--foreground)]
+    shadow-sm
+    transition-all
+    duration-300
+    hover:-translate-y-1
+    hover:bg-[var(--surface)]
+    hover:shadow-[0_8px_25px_rgba(0,0,0,0.08)]
+    dark:hover:shadow-[0_8px_25px_rgba(255,255,255,0.08)]
+  "
+>
+  <span className="flex items-center gap-2.5">
+    <Send
+      className="
+        h-5
+        w-5
+        transition-transform
+        duration-300
+        group-hover:-translate-y-0.5
+        group-hover:translate-x-0.5
+      "
+    />
 
-      <span className="font-medium tracking-wide">
-        Get in Touch
-      </span>
+    <span className="font-medium tracking-wide">
+      Get in Touch
     </span>
-  </Button>
+  </span>
+</Button>
 
 </div>
 
