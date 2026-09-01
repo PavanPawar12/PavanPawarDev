@@ -5,6 +5,7 @@ import { BlogSection } from "@/sections/BlogSection";
 import { site } from "@/data/site";
 
 
+
 /**
  * Placeholder sections. Each will be replaced by its real, fully-built
  * section component (HeroSection, ProjectsSection, etc.) as we work
@@ -53,6 +54,7 @@ export default function Home() {
       <div className="relative mx-auto w-full max-w-7xl">
 
       <BlogSection />
+   
 
       </div>
     </PageTransition>

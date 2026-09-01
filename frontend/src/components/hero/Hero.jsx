@@ -1,6 +1,9 @@
 import { HeroContent } from "@/components/hero/HeroContent";
 import { HeroImage } from "@/components/hero/HeroImage";
 
+
+
+
 /**
  * Mobile: image first (top), content below, everything left-aligned.
  * Desktop (lg+): content on the left, image on the right, side by side.
