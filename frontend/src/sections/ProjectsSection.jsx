@@ -4,7 +4,7 @@ import { FeaturedProject } from "@/components/projects/FeaturedProject";
 import { ProjectFilters } from "@/components/projects/ProjectFilters";
 import { ProjectGrid } from "@/components/projects/ProjectGrid";
 import { projects, getFeaturedProject } from "@/data/projects";
-import Footer from "@/components/footer/Footer";
+// import Footer from "@/components/footer/Footer";
 
 export function ProjectsSection() {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -64,7 +64,7 @@ export function ProjectsSection() {
 
         <ProjectGrid projects={filtered} />
       </div>
-      <Footer/>
+    
     </section>
   );
 }
