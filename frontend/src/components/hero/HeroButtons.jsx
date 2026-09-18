@@ -130,7 +130,7 @@ export function HeroButtons() {
 </div>
 
       {/* Intro Video */}
-      <button
+      {/* <button
         onClick={() => setOpenVideo(true)}
         className="
           flex
@@ -149,7 +149,7 @@ export function HeroButtons() {
       <IntroVideoModal
         open={openVideo}
         onClose={() => setOpenVideo(false)}
-      />
+      /> */}
 
     </motion.div>
   );
