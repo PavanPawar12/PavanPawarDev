@@ -12,6 +12,7 @@ import portal2 from "../assets/projectImages/jobportal/portal2.png";
 import portal3 from "../assets/projectImages/jobportal/portal3.png";
 import steelpage from "../assets/projectImages/stell/steelpage.png"
 import portfolio from "../assets/projectImages/portfolio/homeport.png"
+import tirupati from '../assets/projectImages/tirupatitours/tirupati.png'
 
 export const projects = [
   {
@@ -402,6 +403,86 @@ export const projects = [
     "Add a blog section for technical articles and learning notes",
   ],
 },
+{
+  id: "proj-4",
+  slug: "tirupati-tours-travels",
+  title: "Tirupati Tours & Travels",
+  subtitle:
+    "A modern, responsive travel business website designed to showcase services, vehicles, and make customer enquiries easier",
+
+  description:
+    "A professional frontend website built for Tirupati Tours & Travels to establish a strong online presence, showcase travel services and vehicles, and provide customers with quick access to calls, WhatsApp, location, and booking enquiries.",
+
+  category: "Frontend",
+  accent: "var(--accent)",
+
+  heroImage: tirupati,
+  gallery: [
+    // tirupati1,
+    // tirupati2,
+    // tirupati3,
+    // tirupati4,
+  ],
+
+  technologies: [
+    "React",
+    "Vite",
+    "Tailwind CSS",
+    "JavaScript",
+    "Framer Motion",
+    "Responsive Design",
+    "Vercel",
+  ],
+
+  featured: true,
+
+  github: "https://github.com/PavanPawar12/Tirupati_tours_and_travels",
+  live: "https://tirupati-tours-and-travels.vercel.app",
+
+  // detail-only
+
+  problemStatement:
+    "Local travel businesses often depend heavily on offline communication and social media, making it difficult for potential customers to quickly understand available services, view vehicles, find the business location, or contact the business for a booking.",
+
+  whyBuilt:
+    "I built this website to give Tirupati Tours & Travels a professional digital presence and create a simple customer journey from discovering the business to viewing services, exploring vehicles, and making a direct enquiry.",
+
+  features: [
+    "Modern responsive landing page designed for a travel business",
+    "Interactive hero section with strong call-to-action buttons",
+    "Dedicated services section for different travel requirements",
+    "Vehicle showcase with image-based presentation",
+    "Interactive image gallery with lightbox experience",
+    "Direct call and WhatsApp enquiry actions",
+    "Frontend booking and enquiry form",
+    "Pre-filled WhatsApp enquiry message generation",
+    "Google Maps location and directions integration",
+    "Mobile-friendly navigation and contact actions",
+    "Floating WhatsApp button for quick customer communication",
+    "Smooth scroll animations and interactive UI elements",
+    "Responsive design for mobile, tablet, and desktop",
+  ],
+
+  challenges: [
+    "Designing a professional travel website that feels like a real business website rather than a generic template",
+    "Presenting vehicle and travel information in a visually engaging way",
+    "Making important customer actions such as calling, WhatsApp, and booking easily accessible",
+    "Creating a responsive experience that works well on mobile devices",
+    "Building interactive features while keeping the website lightweight and fast",
+  ],
+
+  solutions: [
+    "Designed a clean travel-focused interface using React and Tailwind CSS",
+    "Created reusable components for services, vehicles, gallery, contact, and enquiry sections",
+    "Implemented responsive layouts using Tailwind CSS breakpoints",
+    "Integrated direct phone, email, WhatsApp, and Google Maps actions",
+    "Created a frontend enquiry flow that generates a structured WhatsApp message",
+    "Used Framer Motion for subtle animations and smooth interactions",
+    "Separated business content into reusable data structures for easier future updates",
+    "Optimized the interface and images for a fast and mobile-friendly experience",
+  ],
+}
+
 ];
 
 export function getProjectBySlug(slug) {
