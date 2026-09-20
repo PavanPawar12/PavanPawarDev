@@ -437,7 +437,7 @@ export const projects = [
   featured: true,
 
   github: "https://github.com/PavanPawar12/Tirupati_tours_and_travels",
-  live: "https://tirupati-tours-and-travels.vercel.app",
+  live: "https://www.tirutrip.site",
 
   // detail-only
 
